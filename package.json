@@ -15,7 +15,7 @@
     "javascript",
     "typescript"
   ],
-  "author": "Your Name",
+  "author": "Bhupendra (BK)",
   "license": "MIT",
   "dependencies": {
     "@babel/generator": "^7.23.6",
