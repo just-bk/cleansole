@@ -1,0 +1,28 @@
+{
+  "name": "console-cleaner",
+  "version": "1.0.0",
+  "description": "CLI to remove all console statements from JS/TS files",
+  "bin": {
+    "console-cleaner": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "console",
+    "cleaner",
+    "cli",
+    "javascript",
+    "typescript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/generator": "^7.23.6",
+    "@babel/parser": "^7.23.7",
+    "@babel/traverse": "^7.23.7",
+    "chalk": "^4.1.2",
+    "glob": "^7.2.3",
+    "yargs": "^17.7.2"
+  }
+}
