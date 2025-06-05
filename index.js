@@ -6,11 +6,16 @@ const path = require("path");
 const { cleanConsolesInDir } = require("./lib/clean");
 
 const argv = yargs(hideBin(process.argv))
-  .usage("Usage: $0 <directory>")
+  .usage("Usage: $0 <file|folder|all> [more...]")
   .demandCommand(1)
-  .example("$0 ./src", "Removes all console statements from ./src")
+  .example("$0 all", "Removes all console statements from current folder")
+  .example("$0 src utils/test.js", "Removes all console statements from multiple locations")
   .argv;
 
-const targetDir = path.resolve(process.cwd(), argv._[0]);
+// Support multiple paths
+const inputPaths = argv._.map(arg => (arg === "all" ? "." : arg));
 
-cleanConsolesInDir(targetDir);
+inputPaths.forEach(p => {
+  const fullPath = path.resolve(process.cwd(), p);
+  cleanConsolesInDir(fullPath);
+});
