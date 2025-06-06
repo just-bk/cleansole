@@ -23,7 +23,7 @@ You can install the package locally in your projects depending on your use case.
 ```bash
 npm install cleansole
 ```
-```
+```bash
 npm i cleansole
 ```
 ---
