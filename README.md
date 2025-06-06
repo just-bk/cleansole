@@ -19,7 +19,7 @@ A CLI tool to automatically remove all `console.*` statements (`log`, `warn`, `e
 ## 📦 Installation
 You can install the package locally in your projects depending on your use case.
 
-#### Installation Command:
+#### Installation Commands:
 ```bash
 npm install cleansole
 ```
