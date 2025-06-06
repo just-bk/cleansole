@@ -1,4 +1,4 @@
-# 🧹 console-cleaner
+# 🧹 cleansole
 
 A CLI tool to automatically remove all `console.*` statements (`log`, `warn`, `error`, etc.) from JavaScript and TypeScript code.
 
@@ -21,14 +21,14 @@ You can install the package locally in your projects depending on your use case.
 
 #### Installation Command
 ```bash
-npm install console-cleaner
+npm install cleansole
 ```
 ---
 
 ## 🧑‍💻 Usage
 Syntax:
 ```bash
-npx console-cleaner <path>
+npx cleansole <path>
 ```
 | Argument | Description                                         |
 | -------- | --------------------------------------------------- |
@@ -38,26 +38,26 @@ npx console-cleaner <path>
 Examples:
 - Clean a single file:
 ```bash
-npx console-cleaner test.js
+npx cleansole test.js
 ```
 - Clean multiple files:
 ```bash
-npx console-cleaner test.js test1.ts
+npx cleansole test.js test1.ts
 ```
 - Clean all files inside a folder recursively:
 ```bash
-npx console-cleaner ./folder-name
+npx cleansole ./folder-name
 ```
 - Clean a deeply nested file:
 ```bash
-npx console-cleaner ./main-folder/inside-folder/test.js
+npx cleansole ./main-folder/inside-folder/test.js
 ```
 🔒 Your files will be updated in-place, removing all console calls. Always version your code or back up before batch operations.
 
 ---
 
 ## 🧠 How It Works — The Logic Explained    
-Instead of using risky regular expressions to remove `console.log` statements, `console-cleaner` uses a safe and robust AST-based approach with Babel.
+Instead of using risky regular expressions to remove `console.log` statements, `cleansole` uses a safe and robust AST-based approach with Babel.
 
 ---
 
@@ -115,7 +115,7 @@ The updated source code is written back to the same file using `fs.writeFileSync
 ## 📁 Project Structure
 
 ```bash
-console-cleaner/
+cleansole/
 ├── index.js         # CLI entry point
 ├── test.js          # Sample file
 ├── package.json

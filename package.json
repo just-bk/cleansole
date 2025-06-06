@@ -1,9 +1,9 @@
 {
-  "name": "console-cleaner",
+  "name": "cleansole",
   "version": "1.0.0",
   "description": "CLI to remove all console statements from JS/TS files",
   "bin": {
-    "console-cleaner": "./index.js"
+    "cleansole": "./index.js"
   },
   "scripts": {
     "start": "node index.js"
