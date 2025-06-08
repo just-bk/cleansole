@@ -47,6 +47,10 @@ npx cleansole test.js
 ```bash
 npx cleansole test.js test1.ts
 ```
+- Clean selective consoles
+```bash
+npx cleansole --warn --error test.js test1.ts
+```
 - Clean all files inside a folder recursively:
 ```bash
 npx cleansole ./folder-name
